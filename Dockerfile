@@ -1,7 +1,5 @@
 FROM alpine:latest
 
-ENTRYPOINT ["ansible"]
-
 RUN apk --no-cache add groff less python py-pip
 # below should install boto3 as well
 RUN pip install awscli
