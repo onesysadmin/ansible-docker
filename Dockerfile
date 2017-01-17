@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk --no-cache add groff less python py2-pip
+RUN apk --no-cache add groff less python py2-pip libssl
 # below should install boto3 and boto 2.x as well
 RUN pip install awscli boto
 
